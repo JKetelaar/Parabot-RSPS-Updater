@@ -1,0 +1,695 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+	<title>Grid - Responsive Html5 Portfolio Template</title>
+	<meta name="description" content="Grid - Responsive Html5 Portfolio Template" />
+	<meta name="author" content="Felixplus - www.felixplus.com" />
+	<meta name="keywords" content="wordpress, themes, wordpress themes, premium wordpress themes, premium themes, wordpress theme shop, free themes, drupal themes, wordpress templates" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+    <link rel="stylesheet" href="css/bootstrap.css" media="all">
+    <link rel="stylesheet" href="css/font-awesome.min.css" media="all">
+    <link rel="stylesheet" href="css/flexslider.css" media="all">
+    <link rel="stylesheet" href="css/prettyPhoto.css" media="all">
+    <link rel="stylesheet" href="css/superfish.css" media="all">
+	<link rel="stylesheet" href="css/bra_social_media.css" media="all">
+	<link rel="stylesheet" href="css/component.css" media="all">
+	<link rel="stylesheet" href="css/theme-options.css" media="all">
+    <link rel="stylesheet" href="style.css" media="all" />
+    <link rel="stylesheet" href="css/bootstrap-responsive.css" media="all">
+    <link rel="stylesheet" href="css/responsive.css" media="all">
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+		<link rel="stylesheet" href="css/ie.css" type="text/css" media="all" />		
+    <![endif]-->
+
+    <!-- Favicons
+        ================================================== -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+	
+	<!-- Style
+	================================================== -->
+    <link rel="stylesheet" href="css/skin/orange.css" type="text/css" id="colors" />
+    <link rel="stylesheet" href="css/skin/orange.css" type="text/css" id="templates" />
+
+    <!-- Font
+            ================================================== -->
+    <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,300italic,200italic,400italic,600italic,600,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+</head>
+<body class="dark-footer">
+    
+	<div id="theme-option">
+        <div class="theme-opt-wrapper">
+            <p>Colors - <i style="font-size:11px;"> * You can use Unlimited Colors </i> </p>
+            <ul class="choose-color">
+                <li><a href="#" class="color oran">&nbsp;</a></li>
+                <li><a href="#" class="color cyan">&nbsp;</a></li>
+                <li><a href="#" class="color pink">&nbsp;</a></li>
+                <li><a href="#" class="color green">&nbsp;</a></li>
+                <li><a href="#" class="color red">&nbsp;</a></li>
+                <li><a href="#" class="color gray">&nbsp;</a></li>
+                <li><a href="#" class="color purple">&nbsp;</a></li>
+            </ul>           
+            
+            <p>Template Style</p>
+            <p class="flx-select-layout">
+                <input type="radio" id="flx-select-light-style" name="flx-select-style-choice" value="light" checked="checked">
+                <label for="flx-select-light-style">Light</label>                    
+                <input type="radio" id="flx-select-dark-style" name="flx-select-style-choice" value="dark">
+                <label for="flx-select-dark-style">Dark</label>
+            </p>
+            <p class="flx-select-footer">Footer Style</p>                
+            <p class="flx-select-footer">
+                <input type="radio" id="flx-select-footer-light" name="flx-select-footer-choice" value="f_light" onClick="return felixplus_footer_CHANGE(jQuery(this).val());">
+                <label for="flx-select-footer-light">Light</label>                    
+                <input type="radio" id="flx-select-footer-dark" name="flx-select-footer-choice" value="f_dark" checked="checked"  onClick="return felixplus_footer_CHANGE(jQuery(this).val());">
+                <label for="flx-select-footer-dark">Dark</label>
+            </p>
+            <a href="#" class="btn reset" onClick="return felixplus_theme_option_reset_CLICK();">Reset</a>
+        </div><!--end:theme-opt-wrapper-->
+        <a href="#" class="open-close-button"> </a><!--open-close-button-->
+    </div><!--end:theme-option -->
+	
+	<header id="flx-header" class="flx-divider">
+    	
+        <div class="wrapper">
+        	
+            <div class="row-fluid">
+            	
+                <div class="span12 clearfix">
+                	
+                    <div id="logo-image">
+                    
+                    	<a href="index.html"><img src="placeholders/logo.png" data-at2x="placeholders/logo@2x.png" alt="" /></a>
+                        
+                    </div><!--end:logo-image-->
+                    
+                     <nav id="main-nav">
+                    
+                    	<ul id="main-menu" class="clearfix">
+                        
+                        	<li>
+                            	<a href="index.html">Home</a>
+                                <ul>
+                                	<li><a href="index.html">Home Example 1</a></li>
+                                    <li><a href="index2.html">Home Example 2</a></li>
+									<li><a href="index3.html">Home Example 3</a></li>
+									<li><a href="index4.html">Home example 4</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                            	<a href="#">Templates</a>
+                                <ul>
+                                	<li><a href="about-us.html">About us</a></li>
+                                    <li><a href="about-me.html">About me</a></li>
+                                    <li><a href="services.html">Services</a></li>
+                                    <li><a href="error404.html">Error 404</a></li>
+                                    <li><a href="under-construction.html">Under Construction</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                            	<a href="portfolio.html">Portfolio</a>
+                                <ul>
+                              	<li><a href="portfolio.html">5 column</a></li>
+                                	<li><a href="portfolio-4col.html">4 column</a></li>
+                                    <li><a href="portfolio-3col.html">3 column</a></li>
+                                    <li><a href="portfolio-2col.html">2 column</a></li>
+                                    <li><a href="project-details.html">Project Details</a>
+                                    	<ul>
+                                        	<li><a href="project-details.html">Single</a></li>
+                                            <li><a href="project-slide.html">Gallery</a></li>
+                                            <li><a href="project-video.html">Video Html5</a></li>
+                                            <li><a href="project-audio.html">Audio Html5</a></li>
+                                            <li><a href="project-youtube.html">Youtube</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="current-menu-item">
+                            	<a href="#">Features</a>
+                                <ul>
+                                	<li class="current-menu-item"><a href="typography.html">Typography</a></li>
+                                    <li><a href="pricing-table.html">Pricing Table</a></li>
+                                    <li><a href="icons.html">Icons</a></li>
+                                    <li><a href="elements.html">Elements</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                            	<a href="blog.html">Blog</a>
+                                <ul>
+                                	<li><a href="blog1.html">Blog I</a></li>
+                                    <li><a href="blog2.html">Blog II</a></li>
+                                    <li><a href="blog3.html">Blog III</a></li>
+									<li><a href="blog4.html">Blog IV</a></li>
+                                    <li><a href="blogpost.html">Blog Post</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contacts.html">Contacts</a></li>
+                        </ul><!--end:main-menu-->
+						
+						<div id="dl-menu" class="dl-menuwrapper">
+                            <button>Open Menu</button>
+                            <ul class="dl-menu">
+                                <li>
+                                    <a href="#">Home</a>
+                                    <ul class="dl-submenu">
+                                        <li class="dl-back"><a href="#">back</a></li>
+                                        <li><a href="index.html">Home example 1</a></li>
+                                        <li><a href="index2.html">Home example 2</a></li>
+										<li><a href="index3.html">Home Example 3</a></li>
+										<li><a href="index4.html">Home example 4</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Templates</a>
+                                    <ul class="dl-submenu">
+                                        <li class="dl-back"><a href="#">back</a></li>
+                                        <li><a href="about-us.html">About us</a></li>
+                                        <li><a href="about-me.html">About me</a></li>
+                                        <li><a href="services.html">Services</a></li>
+                                        <li><a href="error404.html">Error 404</a></li>
+                                        <li><a href="under-construction.html">Under Construction</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="portfolio.html">Portfolio</a>
+                                    <ul class="dl-submenu">
+                                        <li class="dl-back"><a href="#">back</a></li>
+                                        <li><a href="portfolio.html">5 column</a></li>
+										<li><a href="portfolio-4col.html">4 column</a></li>
+                                        <li><a href="portfolio-3col.html">3 column</a></li>
+                                        <li><a href="portfolio-2col.html">2 column</a></li>
+                                        <li>
+                                            <a href="project-details.html">Project Details</a>
+                                            <ul class="dl-submenu">
+                                                <li class="dl-back"><a href="#">back</a></li>
+                                                <li><a href="project-details.html">Single</a></li>
+                                                <li><a href="project-slide.html">Gallery</a></li>
+                                                <li><a href="project-video.html">Video Html5</a></li>
+                                                <li><a href="project-audio.html">Audio Html5</a></li>
+                                                <li><a href="project-youtube.html">Youtube</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Features</a>
+                                    <ul class="dl-submenu">
+                                        <li class="dl-back"><a href="#">back</a></li>
+                                        <li><a href="typography.html">Typography</a></li>
+                                        <li><a href="pricing-table.html">Pricing Table</a></li>
+                                        <li><a href="icons.html">Icons</a></li>
+                                        <li><a href="elements.html">Elements</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="blog.html">Blog</a>
+                                    <ul class="dl-submenu">
+                                        <li class="dl-back"><a href="#">back</a></li>
+                                        <li><a href="blog1.html">Blog I</a></li>
+                                        <li><a href="blog2.html">Blog II</a></li>
+                                        <li><a href="blog3.html">Blog III</a></li>
+                                        <li><a href="blog4.html">Blog IV</a></li>
+										<li><a href="blog.html">Blog V</a></li>
+										<li><a href="blogpost.html">Blog Post</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contacts.html">Contacts</a></li>
+                            </ul>
+                        </div><!-- /dl-menuwrapper -->
+                        
+                    </nav><!--end:main-nav-->
+                    
+                </div><!--end:span12-->
+                
+            </div><!--end:row-fluid-->
+            
+        </div><!--end:wrapper-->
+        
+    </header><!--end:flx-header-->
+    
+    <div id="main-content">
+    
+    	<section class="flx-intro flx-divider">
+        
+        	<div class="wrapper flx-line">
+            
+            	<div class="row-fluid">
+                
+                    <div class="span12 clearfix">
+                    
+                        <p class="flx-features-thumb"></p>
+                        
+                        <div class="flx-intro-content">
+                        
+                            <h2>Features</h2>
+                            <p>Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in anim id est laborum. Allamco laboris nisi ut aliquip ex ea commodo consequat. Aser velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            
+                        </div><!--end:flx-intro-content-->
+                    
+                    </div><!--end:span12-->
+                
+                </div><!--end:row-fluid-->
+            
+            </div><!--end:wrapper-->
+            
+        </section><!--end:flx-intro-->
+        
+        <div class="breadcrumb flx-divider">
+        
+        	<div class="wrapper flx-line">
+            
+            	<div class="row-fluid">
+                
+                	<div class="span12 clearfix">
+                    	<a  href="index.html">Home</a>
+                        <span>&nbsp;&nbsp;/&nbsp;&nbsp;</span>
+                        <span>Features</span>
+                    </div><!--end:span12-->
+                
+                </div><!--end:row-fluid-->
+            
+            </div><!--end:wrapper-->
+        
+        </div><!--end:breadcrumb-->
+        
+        <div class="elements-box flx-divider">
+        
+        	<div class="wrapper flx-line clearfix">
+            
+            	<div class="row-fluid">
+                
+                	<div class="span3">
+                    	<h2 class="element-title">Heading</h2>
+                        <div class="elements-box-left">
+                            <h1>Heading h1</h1>
+                            <h2>Heading h2</h2>
+                            <h3>Heading h3</h3>
+                            <h4>Heading h4</h4>
+                            <h5>Heading h5</h5>
+                            <h6>Heading h6</h6>
+                        </div>
+                    </div><!--end:span3-->
+                    
+                    <div class="span9">
+                    	<h2 class="element-title">Paragraph</h2>
+                        
+                        <div class="elements-box-right">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae erat libero. Phasellus mauris erat, dapibus nec feugiat vel, lobortis sed diam. Fusce vehicula nisl vel dui ullamcorper nec condimentum nisi dictum. Donec quis diam nec ipsum gravida eleifend. Integer risus odio, bibendum quis ullamcorper et, sagittis id neque. Nunc fringilla, orci eu porta tristique, lectus nunc facilisis tortor, ac mattis mi nunc vitae justo. Nulla enim quam, porttitor non vestibulum nec, cursus quis nulla.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis risus nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus luctus, tellus eget mattis scelerisque, quam lacus cursus nunc, eu adipiscing mauris enim vitae erat. Phasellus ornare lorem vitae sem luctus congue. Praesent a enim purus.</p>
+                        </div> <br>
+                        
+                        <h2 class="element-title">Blockquotes</h2>
+                        <div class="elements-box-right">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae erat libero. Phasellus mauris erat, dapibus nec feugiat vel, lobortis sed diam. Fusce vehicula nisl vel dui ullamcorper nec condimentum nisi dictum. Donec quis diam nec ipsum gravida eleifend. Integer risus odio, bibendum quis ullamcorper et, sagittis id neque. Nunc fringilla, orci eu porta tristique, lectus nunc facilisis tortor, ac mattis mi nunc vitae justo. Nulla enim quam, porttitor non vestibulum nec, cursus quis nulla.</p>
+                            <blockquote>
+                                <p>Phasellus mauris erat, dapibus nec feugiat vel, lobortis sed diam. Fusce vehicula nisl vel dui ullamcorper nec condimentum nisi dictum. Donec quis diam nec ipsum gravida eleifend. Integer risus odio</p>
+                            </blockquote>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis risus nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus luctus, tellus eget mattis scelerisque, quam lacus cursus nunc, eu adipiscing mauris enim vitae erat. Phasellus ornare lorem vitae sem luctus congue. Praesent a enim purus.</p>
+                        </div>
+                        
+                    </div><!--end:span9-->
+                
+                </div><!--end:row-fluid-->
+                
+                <div class="row-fluid">
+                
+                	<div class="span3">
+                    
+                    	<h2 class="element-title">Unordered List</h2>
+                        
+                        <div class="elements-box-left">
+                            <ul class="boom-list">
+                                <li><i class="icon-circle"></i> Elegant and Easy to Use</li>
+                                <li><i class="icon-circle"></i> Fully Responsive Layout</li>
+                                <li><i class="icon-circle"></i> Bold, Clean Design</li>
+                                <li><i class="icon-circle"></i> Validate Html5 and Css3</li>
+                                <li><i class="icon-circle"></i> Document & support</li>
+                            </ul>
+                        </div>
+                    
+                    </div><!--end:span3-->
+                    
+                    <div class="span3">
+                    
+                    	<h2 class="element-title">Checked List</h2>
+                        
+                        <div class="elements-box-left">
+                            <ul class="boom-list">
+                                <li><i class="icon-ok"></i> Elegant and Easy to Use</li>
+                                <li><i class="icon-ok"></i> EFully Responsive Layout</li>
+                                <li><i class="icon-ok"></i> EBold, Clean Design</li>
+                                <li><i class="icon-ok"></i> EValidate Html5 and Css3</li>
+                                <li><i class="icon-ok"></i> EDocument & support</li>
+                            </ul>
+                        </div>
+                    
+                    </div><!--end:span3-->
+                    
+                    <div class="span3">
+                    
+                    	<h2 class="element-title">Ordered List</h2>
+                        
+                        <div class="elements-box-left">
+                            <ol class="boom-list ordered-list">
+                                <li>Elegant and Easy to Use</li>
+                                <li>Fully Responsive Layout</li>
+                                <li>Bold, Clean Design</li>
+                                <li>Validate Html5 and Css3</li>
+                                <li>Document & support</li>
+                            </ol>
+                        </div>
+                    
+                    </div><!--end:span3-->
+                    
+                    <div class="span3">
+                    
+                    	<h2 class="element-title">Star List</h2>
+                        
+                        <div class="elements-box-left">
+                            <ul class="boom-list">
+                                <li><i class="icon-star"></i> Elegant and Easy to Use</li>
+                                <li><i class="icon-star"></i> Fully Responsive Layout</li>
+                                <li><i class="icon-star"></i> Bold, Clean Design</li>
+                                <li><i class="icon-star"></i> Validate Html5 and Css3</li>
+                                <li><i class="icon-star"></i> Document & support</li>
+                            </ul>
+                        </div>
+                    
+                    </div><!--end:span3-->
+                
+                </div><!--end:row-fluid-->
+                
+                <div class="row-fluid">
+                
+                	<div class="span3">
+                    
+                    	<h2 class="element-title">Plus List</h2>
+                        
+                        <div class="elements-box-left">
+                            <ul class="boom-list">
+                                <li><i class="icon-plus"></i> Elegant and Easy to Use</li>
+                                <li><i class="icon-plus"></i> Fully Responsive Layout</li>
+                                <li><i class="icon-plus"></i> Bold, Clean Design</li>
+                                <li><i class="icon-plus"></i> Validate Html5 and Css3</li>
+                                <li><i class="icon-plus"></i> Document & support</li>
+                            </ul>
+                        </div>
+                    
+                    </div><!--end:span3-->
+                    
+                    <div class="span3">
+                    
+                    	<h2 class="element-title">Radio List</h2>
+                        
+                        <div class="elements-box-left">
+                            <ul class="boom-list">
+                                <li><input type="radio" id="radio-1-1" name="radio-1-set" class="regular-radio" checked /><label for="radio-1-1"></label> Elegant and Easy to Use</li>
+                                <li><input type="radio" id="radio-1-2" name="radio-1-set" class="regular-radio" /><label for="radio-1-2"></label> Fully Responsive Layout</li>
+                                <li><input type="radio" id="radio-1-3" name="radio-1-set" class="regular-radio" /><label for="radio-1-3"></label> Bold, Clean Design</li>
+                                <li><input type="radio" id="radio-1-4" name="radio-1-set" class="regular-radio" /><label for="radio-1-4"></label> Validate Html5 and Css3</li>
+                            </ul>
+                        </div>
+                    
+                    </div><!--end:span3-->
+                    
+                    <div class="span3">
+                    
+                    	<h2 class="element-title">Checkbox List</h2>
+                        
+                        <div class="elements-box-left">
+                            <ol class="boom-list">
+                                <li><input type="checkbox" id="checkbox-1-0" class="regular-checkbox" /><label for="checkbox-1-0"></label> Elegant and Easy to Use</li>
+                                <li><input type="checkbox" id="checkbox-1-1" class="regular-checkbox" /><label for="checkbox-1-1"></label> Fully Responsive Layout</li>
+                                <li><input type="checkbox" id="checkbox-1-2" class="regular-checkbox" /><label for="checkbox-1-2"></label> Bold, Clean Design</li>
+                                <li><input type="checkbox" id="checkbox-1-3" class="regular-checkbox" /><label for="checkbox-1-3"></label> Validate Html5 and Css3</li>
+                            </ol>
+                        </div>
+                    
+                    </div><!--end:span3-->
+                    
+                    <div class="span3">
+                    
+                    	<h2 class="element-title">Arrow List</h2>
+                        
+                        <div class="elements-box-left">
+                            <ul class="boom-list">
+                                <li><i class="icon-angle-right"></i> Elegant and Easy to Use</li>
+                                <li><i class="icon-angle-right"></i> Fully Responsive Layout</li>
+                                <li><i class="icon-angle-right"></i> Bold, Clean Design</li>
+                                <li><i class="icon-angle-right"></i> Validate Html5 and Css3</li>
+                                <li><i class="icon-angle-right"></i> Document & support</li>
+                            </ul>
+                        </div>
+                    
+                    </div><!--end:span3-->
+                
+                </div><!--end:row-fluid-->
+                
+                <div class="row-fluid">
+                
+                	<div class="span4">
+                    
+                    	<h2 class="element-title">Dropcap style 1</h2>
+                        
+                        <div class="elements-box-right">
+                        	<p><span class="flx-dropcap flx-color">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit ut ipsum tristique accumsan. Sed sagittis mattis lorem at pretium. Pellentesque habitant morbi tristique.Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                        </div>
+                    
+                    </div><!--end:span4-->
+                    
+                    <div class="span4">
+                    
+                    	<h2 class="element-title">Dropcap style 2</h2>
+                        
+                        <div class="elements-box-right">
+                        	<p><span class="flx-dropcap flx-cricle">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit ut ipsum tristique accumsan. Sed sagittis mattis lorem at pretium. Pellentesque habitant morbi tristique.Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                        </div>
+                    
+                    </div><!--end:span4-->
+                    
+                    <div class="span4">
+                    
+                    	<h2 class="element-title">Dropcap style 3</h2>
+                        
+                        <div class="elements-box-right">
+                        	<p><span class="flx-dropcap">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit ut ipsum tristique accumsan. Sed sagittis mattis lorem at pretium. Pellentesque habitant morbi tristique.Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                        </div>
+                    
+                    </div><!--end:span4-->
+                
+                </div><!--end:row-fluid-->
+                
+                <div class="row-fluid">
+                
+                	<div class="span12">
+                    
+                    	<h2 class="element-title">Full width</h2>
+                        
+                        <div class="elements-box-right">
+                        	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum. Suspendisse vulputate aliquam dui. Nulla elementum dui ut augue. Aliquam vehicula mi at mauris. Maecenas placerat, nisl at consequat rhoncus, sem nunc gravida justo, quis eleifend arcu velit quis lacus. Morbi magna magna, tincidunt a, mattis non, imperdiet vitae, tellus. Sed odio est, auctor ac, sollicitudin in, consequat vitae, orci. Fusce id felis. Vivamus sollicitudin metus eget eros.</p>
+                        </div>
+                    
+                    </div><!--end:span12-->
+                    
+                </div><!--end:row-fluid-->
+                
+                <div class="row-fluid">
+                    
+                    <div class="span6">
+                    	<h2 class="element-title">One two</h2>
+                        <div class="elements-box-right">
+                        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit ut ipsum tristique accumsan. Sed sagittis mattis lorem at pretium. Pellentesque habitant morbi tristique.Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                        </div>
+                    </div><!--end:span6-->
+                    
+                    <div class="span6">
+                    	<h2 class="element-title">One two</h2>
+                        <div class="elements-box-right">
+                        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit ut ipsum tristique accumsan. Sed sagittis mattis lorem at pretium. Pellentesque habitant morbi tristique.Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                        </div>
+                    </div><!--end:span6-->
+                
+                </div><!--end:row-fluid-->
+                
+                <div class="row-fluid">
+                    
+                    <div class="span4">
+                    	<h2 class="element-title">One third</h2>
+                        <div class="elements-box-right">
+                        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit ut ipsum tristique accumsan. Sed sagittis mattis lorem at pretium. Pellentesque habitant morbi tristique.Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                        </div>
+                    </div><!--end:span4-->
+                    
+                    <div class="span4">
+                    	<h2 class="element-title">One third</h2>
+                        <div class="elements-box-right">
+                        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit ut ipsum tristique accumsan. Sed sagittis mattis lorem at pretium. Pellentesque habitant morbi tristique.Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                        </div>
+                    </div><!--end:span4-->
+                    
+                    <div class="span4">
+                    	<h2 class="element-title">One third</h2>
+                        <div class="elements-box-right">
+                        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit ut ipsum tristique accumsan. Sed sagittis mattis lorem at pretium. Pellentesque habitant morbi tristique. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                        </div>
+                    </div><!--end:span4-->
+                
+                </div><!--end:row-fluid-->
+                
+                <div class="row-fluid">
+                    
+                    <div class="span3">
+                    	<h2 class="element-title">One fourth</h2>
+                        <div class="elements-box-right">
+                        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit ut ipsum tristique accumsan. Sed sagittis mattis lorem at pretium.</p>
+                        </div>
+                    </div><!--end:span3-->
+                    
+                    <div class="span3">
+                    	<h2 class="element-title">One fourth</h2>
+                        <div class="elements-box-right">
+                        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit ut ipsum tristique accumsan. Sed sagittis mattis lorem at pretium.</p>
+                        </div>
+                    </div><!--end:span3-->
+                    
+                    <div class="span3">
+                    	<h2 class="element-title">One fourth</h2>
+                        <div class="elements-box-right">
+                        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit ut ipsum tristique accumsan. Sed sagittis mattis lorem at pretium.</p>
+                        </div>
+                    </div><!--end:span3-->
+                    
+                    <div class="span3">
+                    	<h2 class="element-title">One fourth</h2>
+                        <div class="elements-box-right">
+                        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit ut ipsum tristique accumsan. Sed sagittis mattis lorem at pretium.</p>
+                        </div>
+                    </div><!--end:span3-->
+                
+                </div><!--end:row-fluid-->
+                
+                <div class="row-fluid">
+                    
+                    <div class="span8">
+                    	<h2 class="element-title">Two third</h2>
+                        <div class="elements-box-right">
+                        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit ut ipsum tristique accumsan. Sed sagittis mattis lorem at pretium. Pellentesque habitant morbi tristique. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+                        </div>
+                    </div><!--end:span8-->
+                    
+                    <div class="span4">
+                    	<h2 class="element-title">One third</h2>
+                        <div class="elements-box-right">
+                        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit ut ipsum tristique accumsan. Sed sagittis mattis lorem at pretium.</p>
+                        </div>
+                    </div><!--end:span4-->
+                
+                </div><!--end:row-fluid-->
+                
+                <div class="row-fluid mb-30">
+                    
+                    <div class="span9">
+                    	<h2 class="element-title">Three fourth</h2>
+                        <div class="elements-box-right">
+                        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit ut ipsum tristique accumsan. Sed sagittis mattis lorem at pretium. Pellentesque habitant morbi tristique. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                        </div>
+                    </div><!--end:span9-->
+                    
+                    <div class="span3">
+                    	<h2 class="element-title">One fourth</h2>
+                        <div class="elements-box-right">
+                        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit ut ipsum tristique.</p>
+                        </div>
+                    </div><!--end:span3-->
+                
+                </div><!--end:row-fluid-->
+            
+            </div><!--end:wrapper-->
+            
+        </div><!--end:elements-box-->
+        
+    </div><!--end:main-content-->
+    
+    <footer id="page-footer">
+    
+    	<div class="wrapper">
+        
+        	<div class="row-fluid">
+            
+            	<div class="span12 clearfix">
+                
+                	<div class="copyright">
+                    	<p>Grid - Html5 template © 2013 by <a  href="www.felixplus.html">FelixPlus.com</a></p>
+                        <span>All stock photos used on this Grid demo site are only for demo purposes and not included in the template package.</span>
+                    </div><!--end:copyright-->
+                    
+                    <div class="social-media-widget">
+                    	<div class="social-bookmarks">                    
+        					<ul>
+                            	<li class="vimeo"><a href="#" target="_blank">vimeo</a></li>
+                                <li class="flickr"><a href="#" target="_blank">flickr</a></li>
+                                <li class="twitter"><a href="#" target="_blank">twitter</a></li>
+                                <li class="facebook"><a href="#" target="_blank">facebook</a></li>                                
+                                <li class="youtube"><a href="#" target="_blank">youtube</a></li>
+        					</ul>
+    					</div><!--end:social-bookmarks-->
+					</div><!--end:social-media-widget-->
+					
+					<p id="back-top">
+						<a href="#top"><i class="icon-chevron-up"></i></a>
+					</p><!--end:back-top-->
+                
+                </div><!--end:span12-->
+            
+            </div><!--end:row-fluid-->
+        
+        </div><!--end:wrapper-->
+    
+    </footer><!--end:page-footer-->
+    
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/superfish.js"></script>
+    <script src="js/retina.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.nivo.slider.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/jquery.carouFredSel-5.6.4.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jflickrfeed.min.js"></script>
+    <script src="js/mediaelement-and-player.min.js"></script>
+    <script src="js/modernizr.custom.63321.js"></script>
+    <script src="js/jquery.hoverdir.js"></script>
+    <script src="js/jquery.dropdown.js"></script>
+	<script src="js/modernizr.custom.js"></script>
+    <script src="js/jquery.dlmenu.js"></script>
+	<script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.eislideshow.js"></script>
+	<script src="js/custom.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.quicksand.js"></script>
+    <script src="js/main.js"></script>
+	<script src="js/bra_social_media.js"></script>
+	<script src="js/styleswitch.js"></script>
+    
+    <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','../../../../../../www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-39766041-1', 'felixplus.com');
+	  ga('send', 'pageview');
+
+	</script>
+    
+</body>
+</html>

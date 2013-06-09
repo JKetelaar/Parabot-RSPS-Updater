@@ -1,0 +1,781 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+	<title>Grid - Responsive Html5 Portfolio Template</title>
+	<meta name="description" content="Grid - Responsive Html5 Portfolio Template" />
+	<meta name="author" content="Felixplus - www.felixplus.com" />
+	<meta name="keywords" content="wordpress, themes, wordpress themes, premium wordpress themes, premium themes, wordpress theme shop, free themes, drupal themes, wordpress templates" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+    <link rel="stylesheet" href="css/bootstrap.css" media="all">
+    <link rel="stylesheet" href="css/font-awesome.min.css" media="all">
+    <link rel="stylesheet" href="css/flexslider.css" media="all">
+    <link rel="stylesheet" href="css/prettyPhoto.css" media="all">
+    <link rel="stylesheet" href="css/mediaelementplayer.min.css" media="all">
+    <link rel="stylesheet" href="css/pf-dropdown.css" media="all">
+    <link rel="stylesheet" href="css/superfish.css" media="all">
+	<link rel="stylesheet" href="css/bra_social_media.css" media="all">
+	<link rel="stylesheet" href="css/component.css" media="all">
+	<link rel="stylesheet" href="css/theme-options.css" media="all">
+    <link rel="stylesheet" href="style.css" media="all" />
+    <link rel="stylesheet" href="css/bootstrap-responsive.css" media="all">
+    <link rel="stylesheet" href="css/responsive.css" media="all">
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+		<link rel="stylesheet" href="css/ie.css" type="text/css" media="all" />		
+    <![endif]-->
+
+    <!-- Favicons
+        ================================================== -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+	
+	<!-- Style
+	================================================== -->
+    <link rel="stylesheet" href="css/skin/orange.css" type="text/css" id="colors" />
+    <link rel="stylesheet" href="css/skin/orange.css" type="text/css" id="templates" />
+
+    <!-- Font
+            ================================================== -->
+    <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,300italic,200italic,400italic,600italic,600,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+</head>
+<body class="pf-4col dark-footer">
+    
+	<div id="theme-option">
+        <div class="theme-opt-wrapper">
+            <p>Colors - <i style="font-size:11px;"> * You can use Unlimited Colors </i> </p>
+            <ul class="choose-color">
+                <li><a href="#" class="color oran">&nbsp;</a></li>
+                <li><a href="#" class="color cyan">&nbsp;</a></li>
+                <li><a href="#" class="color pink">&nbsp;</a></li>
+                <li><a href="#" class="color green">&nbsp;</a></li>
+                <li><a href="#" class="color red">&nbsp;</a></li>
+                <li><a href="#" class="color gray">&nbsp;</a></li>
+                <li><a href="#" class="color purple">&nbsp;</a></li>
+            </ul>           
+            
+            <p>Template Style</p>
+            <p class="flx-select-layout">
+                <input type="radio" id="flx-select-light-style" name="flx-select-style-choice" value="light" checked="checked">
+                <label for="flx-select-light-style">Light</label>                    
+                <input type="radio" id="flx-select-dark-style" name="flx-select-style-choice" value="dark">
+                <label for="flx-select-dark-style">Dark</label>
+            </p>
+            <p class="flx-select-footer">Footer Style</p>                
+            <p class="flx-select-footer">
+                <input type="radio" id="flx-select-footer-light" name="flx-select-footer-choice" value="f_light" onClick="return felixplus_footer_CHANGE(jQuery(this).val());">
+                <label for="flx-select-footer-light">Light</label>                    
+                <input type="radio" id="flx-select-footer-dark" name="flx-select-footer-choice" value="f_dark" checked="checked"  onClick="return felixplus_footer_CHANGE(jQuery(this).val());">
+                <label for="flx-select-footer-dark">Dark</label>
+            </p>
+            <a href="#" class="btn reset" onClick="return felixplus_theme_option_reset_CLICK();">Reset</a>
+        </div><!--end:theme-opt-wrapper-->
+        <a href="#" class="open-close-button"> </a><!--open-close-button-->
+    </div><!--end:theme-option -->
+	
+	<header id="flx-header" class="flx-divider">
+    	
+        <div class="wrapper">
+        	
+            <div class="row-fluid">
+            	
+                <div class="span12 clearfix">
+                	
+                    <div id="logo-image">
+                    
+                    	<a href="index.html"><img src="placeholders/logo.png" data-at2x="placeholders/logo@2x.png" alt="" /></a>
+                        
+                    </div><!--end:logo-image-->
+                    
+                     <nav id="main-nav">
+                    
+                    	<ul id="main-menu" class="clearfix">
+                        
+                        	<li>
+                            	<a href="index.html">Home</a>
+                                <ul>
+                                	<li><a href="index.html">Home Example 1</a></li>
+                                    <li><a href="index2.html">Home Example 2</a></li>
+									<li><a href="index3.html">Home example 3</a></li>
+									<li><a href="index4.html">Home example 4</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                            	<a href="#">Templates</a>
+                                <ul>
+                                	<li><a href="about-us.html">About us</a></li>
+                                    <li><a href="about-me.html">About me</a></li>
+                                    <li><a href="services.html">Services</a></li>
+                                    <li><a href="error404.html">Error 404</a></li>
+                                    <li><a href="under-construction.html">Under Construction</a></li>
+                                </ul>
+                            </li>
+                            <li class="current-menu-item">
+                            	<a href="portfolio.html">Portfolio</a>
+                                <ul>
+                                	<li class="current-menu-item"><a href="portfolio-4col.html">4 column</a></li>
+                                    <li><a href="portfolio-3col.html">3 column</a></li>
+                                    <li><a href="portfolio-2col.html">2 column</a></li>
+                                    <li><a href="project-details.html">Project Details</a>
+                                    	<ul>
+                                        	<li><a href="project-details.html">Single</a></li>
+                                            <li><a href="project-slide.html">Gallery</a></li>
+                                            <li><a href="project-video.html">Video Html5</a></li>
+                                            <li><a href="project-audio.html">Audio Html5</a></li>
+                                            <li><a href="project-youtube.html">Youtube</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                            	<a href="#">Features</a>
+                                <ul>
+                                	<li><a href="typography.html">Typography</a></li>
+                                    <li><a href="pricing-table.html">Pricing Table</a></li>
+                                    <li><a href="icons.html">Icons</a></li>
+                                    <li><a href="elements.html">Elements</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                            	<a href="blog.html">Blog</a>
+                                <ul>
+                                	<li><a href="blog1.html">Blog I</a></li>
+                                    <li><a href="blog2.html">Blog II</a></li>
+                                    <li><a href="blog3.html">Blog III</a></li>
+									<li><a href="blog4.html">Blog IV</a></li>
+                                    <li><a href="blogpost.html">Blog Post</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contacts.html">Contacts</a></li>
+                        </ul><!--end:main-menu-->
+						
+						<div id="dl-menu" class="dl-menuwrapper">
+                            <button>Open Menu</button>
+                            <ul class="dl-menu">
+                                <li>
+                                    <a href="#">Home</a>
+                                    <ul class="dl-submenu">
+                                        <li class="dl-back"><a href="#">back</a></li>
+                                        <li><a href="index.html">Home example 1</a></li>
+                                        <li><a href="index2.html">Home example 2</a></li>
+										<li><a href="index3.html">Home Example 3</a></li>
+										<li><a href="index4.html">Home example 4</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Templates</a>
+                                    <ul class="dl-submenu">
+                                        <li class="dl-back"><a href="#">back</a></li>
+                                        <li><a href="about-us.html">About us</a></li>
+                                        <li><a href="about-me.html">About me</a></li>
+                                        <li><a href="services.html">Services</a></li>
+                                        <li><a href="error404.html">Error 404</a></li>
+                                        <li><a href="under-construction.html">Under Construction</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="portfolio.html">Portfolio</a>
+                                    <ul class="dl-submenu">
+                                        <li class="dl-back"><a href="#">back</a></li>
+                                        <li><a href="portfolio.html">5 column</a></li>
+										<li><a href="portfolio-4col.html">4 column</a></li>
+                                        <li><a href="portfolio-3col.html">3 column</a></li>
+                                        <li><a href="portfolio-2col.html">2 column</a></li>
+                                        <li>
+                                            <a href="project-details.html">Project Details</a>
+                                            <ul class="dl-submenu">
+                                                <li class="dl-back"><a href="#">back</a></li>
+                                                <li><a href="project-details.html">Single</a></li>
+                                                <li><a href="project-slide.html">Gallery</a></li>
+                                                <li><a href="project-video.html">Video Html5</a></li>
+                                                <li><a href="project-audio.html">Audio Html5</a></li>
+                                                <li><a href="project-youtube.html">Youtube</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Features</a>
+                                    <ul class="dl-submenu">
+                                        <li class="dl-back"><a href="#">back</a></li>
+                                        <li><a href="typography.html">Typography</a></li>
+                                        <li><a href="pricing-table.html">Pricing Table</a></li>
+                                        <li><a href="icons.html">Icons</a></li>
+                                        <li><a href="elements.html">Elements</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="blog.html">Blog</a>
+                                    <ul class="dl-submenu">
+                                        <li class="dl-back"><a href="#">back</a></li>
+                                        <li><a href="blog1.html">Blog I</a></li>
+                                        <li><a href="blog2.html">Blog II</a></li>
+                                        <li><a href="blog3.html">Blog III</a></li>
+                                        <li><a href="blog4.html">Blog IV</a></li>
+										<li><a href="blog.html">Blog V</a></li>
+										<li><a href="blogpost.html">Blog Post</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contacts.html">Contacts</a></li>
+                            </ul>
+                        </div><!-- /dl-menuwrapper -->
+                        
+                    </nav><!--end:main-nav-->
+                    
+                </div><!--end:span12-->
+                
+            </div><!--end:row-fluid-->
+            
+        </div><!--end:wrapper-->
+        
+    </header><!--end:flx-header-->
+    
+    <div id="main-content">
+        
+        <section class="flx-intro flx-divider">
+        
+        	<div class="wrapper flx-line">
+            
+            	<div class="row-fluid">
+                
+                    <div class="span12 clearfix">
+                    
+                        <p class="flx-portfolio-thumb"></p>
+                        
+                        <div class="flx-intro-content">
+                        
+                            <h2>Our Portfolio</h2>
+                            <p>Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in anim id est laborum. Allamco laboris nisi ut aliquip ex ea commodo consequat. Aser velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            
+                        </div><!--end:flx-intro-content-->
+                    
+                    </div><!--end:span12-->
+                
+                </div><!--end:row-fluid-->
+            
+            </div><!--end:wrapper-->
+            
+        </section><!--end:flx-intro-->
+        
+        <div class="breadcrumb flx-divider">
+        
+        	<div class="wrapper flx-line">
+            
+            	<div class="row-fluid">
+                
+                	<div class="span12 clearfix">
+                    	<a  href="index.html">Home</a>
+                        <span>&nbsp;&nbsp;/&nbsp;&nbsp;</span>
+                        <span>Portfolio</span>
+                    </div><!--end:span12-->
+                
+                </div><!--end:row-fluid-->
+            
+            </div><!--end:wrapper-->
+        
+        </div><!--end:breadcrumb-->
+        
+        <div class="pf-detail-box flx-divider" id="pf-detail-box" style="display: none;">
+            <div class="wrapper flx-line">        
+                <div class="row-fluid">
+                    <div class="span12">
+                    </div><!--end:span12-->                                    
+                </div><!--end:row-fluid-->     
+            </div><!--end:wrapper-->
+        </div><!--end:pf-detail-box-->
+        
+        <section class="widget portfolio-widget flx-divider ff-container">
+        
+        	<header class="flx-header flx-divider">
+                <div class="wrapper flx-line clearfix">
+                    <select id="cd-dropdown" class="cd-select">
+                        <option value="-1" selected>Sort Portfolio</option>
+                        <option value="1" class="all">All</option>
+                        <option value="2" class="ill">illustrator</option>
+                        <option value="3" class="photo">Photoshop</option>
+                        <option value="4" class="digital">Digital</option>
+                        <option value="5" class="art">Art</option>
+                    </select>
+                </div><!--end:wrapper-->
+            </header>
+            
+            <div class="wrapper flx-line">
+            
+            	<div class="row-fluid">
+                	
+                    <div class="span12">
+                        
+                        <h2 class="widget-title">Our Portfolio</h2>
+                        
+                        <ul class="pf-box ourHolder clearfix">
+                            <li class="item" data-id="id-1" data-type="art">
+                                <div class="view view-first">
+                                    <img src="placeholders/portfolio-images/pf-1.jpg" alt="" />
+                                    <div class="mask">
+                                        <ul>
+                                            <li class="pf-header"><a href="#pf-detail-box" onClick="return felixplus_portfolio_detail_click(jQuery(this), 1, true);">View Project</a></li>
+                                            <li class="pf-lightbox"><a href="placeholders/portfolio-images/pf-1.jpg" rel="prettyPhoto[Gallery]">Open in Lightbox</a></li>
+                                            <li class="pf-footer">
+                                                <h5>Dribbble icon</h5>
+                                                <span>iOs application</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item" data-id="id-2" data-type="ill">
+                                <div class="view view-first">
+                                    <img src="placeholders/portfolio-images/pf-2.jpg" alt="" />
+                                    <div class="mask">
+                                        <ul>
+                                            <li class="pf-header"><a href="#pf-detail-box" onClick="return felixplus_portfolio_detail_click(jQuery(this), 2, true);">View Project</a></li>
+                                            <li class="pf-lightbox"><a href="placeholders/portfolio-images/pf-2.jpg" rel="prettyPhoto[Gallery]">Open in Lightbox</a></li>
+                                            <li class="pf-footer">
+                                                <h5>Dribbble icon</h5>
+                                                <span>iOs application</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item" data-id="id-3" data-type="art">
+                                <div class="view view-first">
+                                    <img src="placeholders/portfolio-images/pf-3.jpg" alt="" />
+                                    <div class="mask">
+                                        <ul>
+                                            <li class="pf-header"><a href="#pf-detail-box" onClick="return felixplus_portfolio_detail_click(jQuery(this), 3, true);">View Project</a></li>
+                                            <li class="pf-lightbox"><a href="placeholders/portfolio-images/pf-3.jpg" rel="prettyPhoto[Gallery]">Open in Lightbox</a></li>
+                                            <li class="pf-footer">
+                                                <h5>Dribbble icon</h5>
+                                                <span>iOs application</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item" data-id="id-4" data-type="photo">
+                                <div class="view view-first">
+                                    <img src="placeholders/portfolio-images/pf-4.jpg" alt="" />
+                                    <div class="mask">
+                                        <ul>
+                                            <li class="pf-header"><a href="#pf-detail-box" onClick="return felixplus_portfolio_detail_click(jQuery(this), 4, true);">View Project</a></li>
+                                            <li class="pf-lightbox"><a href="placeholders/portfolio-images/pf-4.jpg" rel="prettyPhoto[Gallery]">Open in Lightbox</a></li>
+                                            <li class="pf-footer">
+                                                <h5>Dribbble icon</h5>
+                                                <span>iOs application</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item" data-id="id-5" data-type="photo">
+                                <div class="view view-first">
+                                    <img src="placeholders/portfolio-images/pf-5.jpg" alt="" />
+                                    <div class="mask">
+                                        <ul>
+                                            <li class="pf-header"><a href="#pf-detail-box" onClick="return felixplus_portfolio_detail_click(jQuery(this), 5, true);">View Project</a></li>
+                                            <li class="pf-lightbox"><a href="placeholders/portfolio-images/pf-5.jpg" rel="prettyPhoto[Gallery]">Open in Lightbox</a></li>
+                                            <li class="pf-footer">
+                                                <h5>Dribbble icon</h5>
+                                                <span>iOs application</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item" data-id="id-6" data-type="ill">
+                                <div class="view view-first">
+                                    <img src="placeholders/portfolio-images/pf-6.jpg" alt="" />
+                                    <div class="mask">
+                                        <ul>
+                                            <li class="pf-header"><a href="#pf-detail-box" onClick="return felixplus_portfolio_detail_click(jQuery(this), 1, true);">View Project</a></li>
+                                            <li class="pf-lightbox"><a href="placeholders/portfolio-images/pf-6.jpg" rel="prettyPhoto[Gallery]">Open in Lightbox</a></li>
+                                            <li class="pf-footer">
+                                                <h5>Dribbble icon</h5>
+                                                <span>iOs application</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item" data-id="id-7" data-type="art">
+                                <div class="view view-first">
+                                    <img src="placeholders/portfolio-images/pf-7.jpg" alt="" />
+                                    <div class="mask">
+                                        <ul>
+                                            <li class="pf-header"><a href="#pf-detail-box" onClick="return felixplus_portfolio_detail_click(jQuery(this), 2, true);">View Project</a></li>
+                                           <li class="pf-lightbox"><a href="placeholders/portfolio-images/pf-7.jpg" rel="prettyPhoto[Gallery]">Open in Lightbox</a></li>
+                                            <li class="pf-footer">
+                                                <h5>Dribbble icon</h5>
+                                                <span>iOs application</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item" data-id="id-8" data-type="photo">
+                                <div class="view view-first">
+                                    <img src="placeholders/portfolio-images/pf-8.jpg" alt="" />
+                                    <div class="mask">
+                                        <ul>
+                                            <li class="pf-header"><a href="#pf-detail-box" onClick="return felixplus_portfolio_detail_click(jQuery(this), 3, true);">View Project</a></li>
+                                            <li class="pf-lightbox"><a href="placeholders/portfolio-images/pf-8.jpg" rel="prettyPhoto[Gallery]">Open in Lightbox</a></li>
+                                            <li class="pf-footer">
+                                                <h5>Dribbble icon</h5>
+                                                <span>iOs application</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item" data-id="id-9" data-type="digital">
+                                <div class="view view-first">
+                                    <img src="placeholders/portfolio-images/pf-9.jpg" alt="" />
+                                    <div class="mask">
+                                        <ul>
+                                            <li class="pf-header"><a href="#pf-detail-box" onClick="return felixplus_portfolio_detail_click(jQuery(this), 4, true);">View Project</a></li>
+                                            <li class="pf-lightbox"><a href="placeholders/portfolio-images/pf-9.jpg" rel="prettyPhoto[Gallery]">Open in Lightbox</a></li>
+                                            <li class="pf-footer">
+                                                <h5>Dribbble icon</h5>
+                                                <span>iOs application</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item" data-id="id-10" data-type="photo">
+                                <div class="view view-first">
+                                    <img src="placeholders/portfolio-images/pf-10.jpg" alt="" />
+                                    <div class="mask">
+                                        <ul>
+                                            <li class="pf-header"><a href="#pf-detail-box" onClick="return felixplus_portfolio_detail_click(jQuery(this), 5, true);">View Project</a></li>
+                                            <li class="pf-lightbox"><a href="placeholders/portfolio-images/pf-10.jpg" rel="prettyPhoto[Gallery]">Open in Lightbox</a></li>
+                                            <li class="pf-footer">
+                                                <h5>Dribbble icon</h5>
+                                                <span>iOs application</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item" data-id="id-11" data-type="digital">
+                                <div class="view view-first">
+                                    <img src="placeholders/portfolio-images/pf-5.jpg" alt="" />
+                                    <div class="mask">
+                                        <ul>
+                                            <li class="pf-header"><a href="#pf-detail-box" onClick="return felixplus_portfolio_detail_click(jQuery(this), 1, true);">View Project</a></li>
+                                            <li class="pf-lightbox"><a href="placeholders/portfolio-images/pf-5.jpg" rel="prettyPhoto[Gallery]">Open in Lightbox</a></li>
+                                            <li class="pf-footer">
+                                                <h5>Dribbble icon</h5>
+                                                <span>iOs application</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item" data-id="id-12" data-type="ill">
+                                <div class="view view-first">
+                                    <img src="placeholders/portfolio-images/pf-1.jpg" alt="" />
+                                    <div class="mask">
+                                        <ul>
+                                            <li class="pf-header"><a href="#pf-detail-box" onClick="return felixplus_portfolio_detail_click(jQuery(this), 2, true);">View Project</a></li>
+                                            <li class="pf-lightbox"><a href="placeholders/portfolio-images/pf-6.jpg" rel="prettyPhoto[Gallery]">Open in Lightbox</a></li>
+                                            <li class="pf-footer">
+                                                <h5>Dribbble icon</h5>
+                                                <span>iOs application</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item" data-id="id-13" data-type="ill">
+                                <div class="view view-first">
+                                    <img src="placeholders/portfolio-images/pf-6.jpg" alt="" />
+                                    <div class="mask">
+                                        <ul>
+                                            <li class="pf-header"><a href="#pf-detail-box" onClick="return felixplus_portfolio_detail_click(jQuery(this), 3, true);">View Project</a></li>
+                                            <li class="pf-lightbox"><a href="placeholders/portfolio-images/pf-6.jpg" rel="prettyPhoto[Gallery]">Open in Lightbox</a></li>
+                                            <li class="pf-footer">
+                                                <h5>Dribbble icon</h5>
+                                                <span>iOs application</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item" data-id="id-14" data-type="ill">
+                                <div class="view view-first">
+                                    <img src="placeholders/portfolio-images/pf-3.jpg" alt="" />
+                                    <div class="mask">
+                                        <ul>
+                                            <li class="pf-header"><a href="#pf-detail-box" onClick="return felixplus_portfolio_detail_click(jQuery(this), 4, true);">View Project</a></li>
+                                            <li class="pf-lightbox"><a href="placeholders/portfolio-images/pf-6.jpg" rel="prettyPhoto[Gallery]">Open in Lightbox</a></li>
+                                            <li class="pf-footer">
+                                                <h5>Dribbble icon</h5>
+                                                <span>iOs application</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item" data-id="id-15" data-type="photo">
+                                <div class="view view-first">
+                                    <img src="placeholders/portfolio-images/pf-4.jpg" alt="" />
+                                    <div class="mask">
+                                        <ul>
+                                            <li class="pf-header"><a href="#pf-detail-box" onClick="return felixplus_portfolio_detail_click(jQuery(this), 5, true);">View Project</a></li>
+                                            <li class="pf-lightbox"><a href="placeholders/portfolio-images/pf-4.jpg" rel="prettyPhoto[Gallery]">Open in Lightbox</a></li>
+                                            <li class="pf-footer">
+                                                <h5>Dribbble icon</h5>
+                                                <span>iOs application</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                        
+                            
+                    </div><!--end:span12-->
+                    
+                </div><!--end:row-fluid-->
+                
+            </div><!--end:wrapper-->
+        
+        </section><!--end:portfolio-widget-->
+        
+        <section class="widget flx-divider">
+        
+        	<div class="wrapper">
+            
+                <div class="row-fluid">
+                
+                    <div class="span12">
+                            
+                        <div class="tag-line-box clearfix">
+                            <div class="tag-line">
+                                <h2>Grid is a ultra-responsive creative portfolio theme.</h2>
+                                <p>It looks just mega awesome on all the diferent devices!</p>
+                            </div><!--end:tag-line-->
+                            
+                            <a class="icon-button clearfix" href="#"><i class="icon-shopping-cart"></i>Buy now</a>
+                        </div><!--tag-line-box-->
+                    
+                    </div><!--end:span12-->
+                
+                </div><!--row-fluid-->
+            
+            </div><!--end:wrapper-->
+            
+        </section><!--end:widget-->
+        
+    </div><!--end:main-content-->
+    
+    <div id="page-bottom" class="flx-divider">
+        
+        <header class="flx-divider"><div class="wrapper flx-line"></div></header>
+        
+        <div class="wrapper flx-line">
+            
+            <div class="row-fluid">
+            
+                <div class="span12 clearfix">
+                
+                    <ul id="bottom-sidebar">
+                    
+                        <li>
+                        
+                            <aside class="widget widget_text">
+                            
+                                <h2 class="widget-title">About us</h2>
+                                
+                                <div class="textwidget">
+                                
+                                    <p>Donec at nulla non ipsum aliquet blandit. Pellentesque id fermentum nunc. Pellentesque justo nisi, fermentum id rhoncus eu, congue sed mi. Maecenas tempor tristique lectus.</p>
+                                
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    
+                                </div><!--textwidget-->
+                                
+                                <ul class="contact-info">
+                                
+                                    <li class="green">
+                                        <i class="icon-map-marker"></i><span class="contact-address">Salt Lake City, UT 87234</span>
+                                    </li>
+                                    <li class="orange">
+                                        <i class="icon-phone"></i><a class="contact-phone" href="callto:0123456789">(012) 345-6789</a>
+                                    </li>
+                                    <li class="blue">
+                                        <i class="icon-envelope-alt"></i><a class="contact-email" href="mailto:contact@felixplus.com">contact@felixplus.com</a>
+                                    </li>
+                                    
+                                </ul><!--end:contact-info-->
+                            
+                            </aside><!--end:widget-->
+                        
+                        </li>
+                        
+                        <li>
+                    
+                            <aside class="widget">
+                            
+                                <h2 class="widget-title">Recent post</h2>
+                                
+                                <ul class="flx-recent-post">
+                                    <li>
+                                        <article class="clearfix">
+                                            <a class="entry-thumb" href="#"><img src="placeholders/95x95/95x95-1.jpg" alt="" /></a>
+                                            <div class="entry-content">
+                                                <a class="entry-title" href="#">Lorem ipsum dolor sit amet...</a>
+                                                <span class="entry-date">August 26, 2013</span>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li>
+                                        <article class="clearfix">
+                                            <a class="entry-thumb" href="#"><img src="placeholders/95x95/95x95-2.jpg" alt="" /></a>
+                                            <div class="entry-content">
+                                                <a class="entry-title" href="#">Amazing post with all the goodies </a>
+                                                <span class="entry-date">January 26, 2013</span>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li>
+                                        <article class="clearfix">
+                                            <a class="entry-thumb" href="#"><img src="placeholders/95x95/95x95-3.jpg" alt="" /></a>
+                                            <div class="entry-content">
+                                                <a class="entry-title" href="#">Porttitor porttitor mollis vitae placerat</a>
+                                                <span class="entry-date">May 26, 2013</span>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li>
+                                        <article class="clearfix">
+                                            <a class="entry-thumb" href="#"><img src="placeholders/95x95/95x95-4.jpg" alt="" /></a>
+                                            <div class="entry-content">
+                                                <a class="entry-title" href="#">Auctor consectetur ligula gravida</a>
+                                                <span class="entry-date">July 26, 2013</span>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li>
+                                        <article class="clearfix">
+                                            <a class="entry-thumb" href="#"><img src="placeholders/95x95/95x95-5.jpg" alt="" /></a>
+                                            <div class="entry-content">
+                                                <a class="entry-title" href="#">Porttitor porttitor mollis vitae placerat</a>
+                                                <span class="entry-date">September 26, 2013</span>
+                                            </div>
+                                        </article>
+                                    </li>
+                                </ul>
+                            
+                            </aside><!--end:widget-->
+                        
+                        </li>
+                        
+                        <li>
+                        
+                            <aside class="widget">
+                            
+                                <h2 class="widget-title">On Flickr</h2>
+                                
+                                <div class="flickr-wrap clearfix" id="flickr-feed-1">                    
+                                    <ul class="flx-flickr-widget clearfix"></ul>
+                                </div><!--end:flickr-wrap-->
+                            
+                            </aside><!--end:widget-->
+                        
+                        </li>
+                    
+                    </ul><!--end:bottom-sidebar-->
+                
+                </div><!--end:span12-->
+            
+            </div><!--end:row-fluid-->
+        
+        </div><!--end:wrapper-->
+    
+    </div><!--end:page-bottom-->
+    
+    <footer id="page-footer">
+    
+    	<div class="wrapper">
+        
+        	<div class="row-fluid">
+            
+            	<div class="span12 clearfix">
+                
+                	<div class="copyright">
+                    	<p>Grid - Html5 template © 2013 by <a  href="www.felixplus.html">FelixPlus.com</a></p>
+                        <span>All stock photos used on this Grid demo site are only for demo purposes and not included in the template package.</span>
+                    </div><!--end:copyright-->
+                    
+                    <div class="social-media-widget">
+                    	<div class="social-bookmarks">                    
+        					<ul>
+                            	<li class="vimeo"><a href="#" target="_blank">vimeo</a></li>
+                                <li class="flickr"><a href="#" target="_blank">flickr</a></li>
+                                <li class="twitter"><a href="#" target="_blank">twitter</a></li>
+                                <li class="facebook"><a href="#" target="_blank">facebook</a></li>                                
+                                <li class="youtube"><a href="#" target="_blank">youtube</a></li>
+        					</ul>
+    					</div><!--end:social-bookmarks-->
+					</div><!--end:social-media-widget-->
+					
+					<p id="back-top">
+						<a href="#top"><i class="icon-chevron-up"></i></a>
+					</p><!--end:back-top-->
+                
+                </div><!--end:span12-->
+            
+            </div><!--end:row-fluid-->
+        
+        </div><!--end:wrapper-->
+    
+    </footer><!--end:page-footer-->
+    
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/superfish.js"></script>
+    <script src="js/retina.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.nivo.slider.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/jquery.carouFredSel-5.6.4.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jflickrfeed.min.js"></script>
+    <script src="js/mediaelement-and-player.min.js"></script>
+    <script src="js/modernizr.custom.63321.js"></script>
+    <script src="js/jquery.hoverdir.js"></script>
+    <script src="js/jquery.dropdown.js"></script>
+	<script src="js/modernizr.custom.js"></script>
+    <script src="js/jquery.dlmenu.js"></script>
+	<script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.eislideshow.js"></script>
+	<script src="js/custom.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.quicksand.js"></script>
+    <script src="js/main.js"></script>
+	<script src="js/bra_social_media.js"></script>
+	<script src="js/styleswitch.js"></script>
+    
+    <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','../../../../../../www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-39766041-1', 'felixplus.com');
+	  ga('send', 'pageview');
+
+	</script>
+    
+</body>
+</html>

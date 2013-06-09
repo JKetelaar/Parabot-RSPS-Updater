@@ -1,0 +1,299 @@
+.countdown-widget .span12 {
+	margin-top:-100px;
+}
+.countdown-title {
+	height:100px;
+	margin:0 -1px;
+}
+.countdown-title li {
+	list-style:none;
+	float:left;
+	width:249px;
+	text-align:center;
+	color:#969696;
+	font-weight:100;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size:30px;
+	text-transform:uppercase;
+	line-height:100px;
+	border-right:1px solid #e3ecf0;
+}
+
+.countdown {
+	text-shadow: none;
+	font-size: 60px;
+	font-weight:400;
+	color: #2d2d2d;
+	font-family: 'Source Sans Pro', sans-serif;
+	height: 230px;
+}
+
+.countdown .clock {
+	margin:0 -1px;
+	text-align: center;
+	height:100%;
+}
+
+.countdown .clock li {
+	list-style:none;
+	float: left;
+	width: 249px;
+	height: 100%;
+	border-right:1px solid #e3ecf0;
+	color:#06C5AC;
+	
+}
+
+.countdown .clock li.days {
+	/*background:url(../images/background/degrees.png) no-repeat top right;*/
+	line-height:230px;
+}
+
+.countdown .clock li.hours {
+	/*background: url(../images/background/degrees.png) no-repeat top;*/
+	line-height:230px;
+}
+
+.countdown .clock li.seconds {
+	/*background: url(../images/background/degrees.png) no-repeat -200px 200px;*/
+	line-height:230px;
+}
+
+/* SECONDS */
+
+.countdown .clock li.seconds.s59 {background-position: -170px 0;}
+.countdown .clock li.seconds.s58 {background-position: -340px 0;}
+.countdown .clock li.seconds.s57 {background-position: -510px 0;}
+.countdown .clock li.seconds.s56 {background-position: -680px 0;}
+.countdown .clock li.seconds.s55 {background-position: -850px 0;}
+.countdown .clock li.seconds.s54 {background-position: -1020px 0;}
+.countdown .clock li.seconds.s53 {background-position: -1190px 0;}
+.countdown .clock li.seconds.s52 {background-position: -1360px 0;}
+.countdown .clock li.seconds.s51 {background-position: -1530px 0;}
+
+.countdown .clock li.seconds.s50 {background-position: 0px -170px;}
+.countdown .clock li.seconds.s49 {background-position: -170px -170px;}
+.countdown .clock li.seconds.s48 {background-position: -340px -170px;}
+.countdown .clock li.seconds.s47 {background-position: -510px -170px;}
+.countdown .clock li.seconds.s46 {background-position: -680px -170px;}
+.countdown .clock li.seconds.s45 {background-position: -850px -170px;}
+.countdown .clock li.seconds.s44 {background-position: -1020px -170px;}
+.countdown .clock li.seconds.s43 {background-position: -1190px -170px;}
+.countdown .clock li.seconds.s42 {background-position: -1360px -170px;}
+.countdown .clock li.seconds.s41 {background-position: -1530px -170px;}
+
+.countdown .clock li.seconds.s40 {background-position: 0px -340px;}
+.countdown .clock li.seconds.s39 {background-position: -170px -340px;}
+.countdown .clock li.seconds.s38 {background-position: -340px -340px;}
+.countdown .clock li.seconds.s37 {background-position: -510px -340px;}
+.countdown .clock li.seconds.s36 {background-position: -680px -340px;}
+.countdown .clock li.seconds.s35 {background-position: -850px -340px;}
+.countdown .clock li.seconds.s34 {background-position: -1020px -340px;}
+.countdown .clock li.seconds.s33 {background-position: -1190px -340px;}
+.countdown .clock li.seconds.s32 {background-position: -1360px -340px;}
+.countdown .clock li.seconds.s31 {background-position: -1530px -340px;}
+
+.countdown .clock li.seconds.s30 {background-position: 0px -510px;}
+.countdown .clock li.seconds.s29 {background-position: -170px -510px;}
+.countdown .clock li.seconds.s28 {background-position: -340px -510px;}
+.countdown .clock li.seconds.s27 {background-position: -510px -510px;}
+.countdown .clock li.seconds.s26 {background-position: -680px -510px;}
+.countdown .clock li.seconds.s25 {background-position: -850px -510px;}
+.countdown .clock li.seconds.s24 {background-position: -1020px -510px;}
+.countdown .clock li.seconds.s23 {background-position: -1190px -510px;}
+.countdown .clock li.seconds.s22 {background-position: -1360px -510px;}
+.countdown .clock li.seconds.s21 {background-position: -1530px -510px;}
+
+.countdown .clock li.seconds.s20 {background-position: 0px -680px;}
+.countdown .clock li.seconds.s19 {background-position: -170px -680px;}
+.countdown .clock li.seconds.s18 {background-position: -340px -680px;}
+.countdown .clock li.seconds.s17 {background-position: -510px -680px;}
+.countdown .clock li.seconds.s16 {background-position: -680px -680px;}
+.countdown .clock li.seconds.s15 {background-position: -850px -680px;}
+.countdown .clock li.seconds.s14 {background-position: -1020px -680px;}
+.countdown .clock li.seconds.s13 {background-position: -1190px -680px;}
+.countdown .clock li.seconds.s12 {background-position: -1360px -680px;}
+.countdown .clock li.seconds.s11 {background-position: -1530px -680px;}
+
+.countdown .clock li.seconds.s10 {background-position: 0px -850px;}
+.countdown .clock li.seconds.s9 {background-position: -170px -850px;}
+.countdown .clock li.seconds.s8 {background-position: -340px -850px;}
+.countdown .clock li.seconds.s7 {background-position: -510px -850px;}
+.countdown .clock li.seconds.s6 {background-position: -680px -850px;}
+.countdown .clock li.seconds.s5 {background-position: -850px -850px;}
+.countdown .clock li.seconds.s4 {background-position: -1020px -850px;}
+.countdown .clock li.seconds.s3 {background-position: -1190px -850px;}
+.countdown .clock li.seconds.s2 {background-position: -1360px -850px;}
+.countdown .clock li.seconds.s1 {background-position: -1530px -850px;}
+
+.countdown .clock li.seconds.s0 {background-position: 0px 0px;}
+
+/* MINUTES */
+
+.countdown .clock li.minutes {
+	/*background: url(../images/background/degrees.png) no-repeat;*/
+	line-height:230px;
+}
+
+.countdown .clock li.minutes.m59 {background-position: -170px 0;}
+.countdown .clock li.minutes.m58 {background-position: -340px 0;}
+.countdown .clock li.minutes.m57 {background-position: -510px 0;}
+.countdown .clock li.minutes.m56 {background-position: -680px 0;}
+.countdown .clock li.minutes.m55 {background-position: -850px 0;}
+.countdown .clock li.minutes.m54 {background-position: -1020px 0;}
+.countdown .clock li.minutes.m53 {background-position: -1190px 0;}
+.countdown .clock li.minutes.m52 {background-position: -1360px 0;}
+.countdown .clock li.minutes.m51 {background-position: -1530px 0;}
+
+.countdown .clock li.minutes.m50 {background-position: 0px -170px;}
+.countdown .clock li.minutes.m49 {background-position: -170px -170px;}
+.countdown .clock li.minutes.m48 {background-position: -340px -170px;}
+.countdown .clock li.minutes.m47 {background-position: -510px -170px;}
+.countdown .clock li.minutes.m46 {background-position: -680px -170px;}
+.countdown .clock li.minutes.m45 {background-position: -850px -170px;}
+.countdown .clock li.minutes.m44 {background-position: -1020px -170px;}
+.countdown .clock li.minutes.m43 {background-position: -1190px -170px;}
+.countdown .clock li.minutes.m42 {background-position: -1360px -170px;}
+.countdown .clock li.minutes.m41 {background-position: -1530px -170px;}
+
+.countdown .clock li.minutes.m40 {background-position: 0px -340px;}
+.countdown .clock li.minutes.m39 {background-position: -170px -340px;}
+.countdown .clock li.minutes.m38 {background-position: -340px -340px;}
+.countdown .clock li.minutes.m37 {background-position: -510px -340px;}
+.countdown .clock li.minutes.m36 {background-position: -680px -340px;}
+.countdown .clock li.minutes.m35 {background-position: -850px -340px;}
+.countdown .clock li.minutes.m34 {background-position: -1020px -340px;}
+.countdown .clock li.minutes.m33 {background-position: -1190px -340px;}
+.countdown .clock li.minutes.m32 {background-position: -1360px -340px;}
+.countdown .clock li.minutes.m31 {background-position: -1530px -340px;}
+
+.countdown .clock li.minutes.m30 {background-position: 0px -510px;}
+.countdown .clock li.minutes.m29 {background-position: -170px -510px;}
+.countdown .clock li.minutes.m28 {background-position: -340px -510px;}
+.countdown .clock li.minutes.m27 {background-position: -510px -510px;}
+.countdown .clock li.minutes.m26 {background-position: -680px -510px;}
+.countdown .clock li.minutes.m25 {background-position: -850px -510px;}
+.countdown .clock li.minutes.m24 {background-position: -1020px -510px;}
+.countdown .clock li.minutes.m23 {background-position: -1190px -510px;}
+.countdown .clock li.minutes.m22 {background-position: -1360px -510px;}
+.countdown .clock li.minutes.m21 {background-position: -1530px -510px;}
+
+.countdown .clock li.minutes.m20 {background-position: 0px -680px;}
+.countdown .clock li.minutes.m19 {background-position: -170px -680px;}
+.countdown .clock li.minutes.m18 {background-position: -340px -680px;}
+.countdown .clock li.minutes.m17 {background-position: -510px -680px;}
+.countdown .clock li.minutes.m16 {background-position: -680px -680px;}
+.countdown .clock li.minutes.m15 {background-position: -850px -680px;}
+.countdown .clock li.minutes.m14 {background-position: -1020px -680px;}
+.countdown .clock li.minutes.m13 {background-position: -1190px -680px;}
+.countdown .clock li.minutes.m12 {background-position: -1360px -680px;}
+.countdown .clock li.minutes.m11 {background-position: -1530px -680px;}
+
+.countdown .clock li.minutes.m10 {background-position: 0px -850px;}
+.countdown .clock li.minutes.m9 {background-position: -170px -850px;}
+.countdown .clock li.minutes.m8 {background-position: -340px -850px;}
+.countdown .clock li.minutes.m7 {background-position: -510px -850px;}
+.countdown .clock li.minutes.m6 {background-position: -680px -850px;}
+.countdown .clock li.minutes.m5 {background-position: -850px -850px;}
+.countdown .clock li.minutes.m4 {background-position: -1020px -850px;}
+.countdown .clock li.minutes.m3 {background-position: -1190px -850px;}
+.countdown .clock li.minutes.m2 {background-position: -1360px -850px;}
+.countdown .clock li.minutes.m1 {background-position: -1530px -850px;}
+
+.countdown .clock li.minutes.m0 {background-position: 0px 0px;}
+
+/* HOURS */
+
+.countdown .clock li.hours.h0 {background-position: 0px 0px;}
+.countdown .clock li.hours.h23 {background-position: -170px 0;}
+.countdown .clock li.hours.h22 {background-position: -340px 0;}
+.countdown .clock li.hours.h21 {background-position: -510px 0;}
+.countdown .clock li.hours.h20 {background-position: -680px 0;}
+.countdown .clock li.hours.h19 {background-position: -850px 0;}
+.countdown .clock li.hours.h18 {background-position: 0px -170px;}
+.countdown .clock li.hours.h17 {background-position: -170px -170px;}
+.countdown .clock li.hours.h16 {background-position: -340px -170px;}
+.countdown .clock li.hours.h15 {background-position: -510px -170px;}
+.countdown .clock li.hours.h14 {background-position: -680px -170px;}
+.countdown .clock li.hours.h13 {background-position: -850px -170px;}
+.countdown .clock li.hours.h12 {background-position: -0px -340px;}
+.countdown .clock li.hours.h11 {background-position: -170px -340px;}
+.countdown .clock li.hours.h10 {background-position: -340px -340px;}
+.countdown .clock li.hours.h9 {background-position: -510px -340px;}
+.countdown .clock li.hours.h8 {background-position: -680px -340px;}
+.countdown .clock li.hours.h7 {background-position: -850px -340px;}
+.countdown .clock li.hours.h6 {background-position: -0px -510px;}
+.countdown .clock li.hours.h5 {background-position: -170px -510px;}
+.countdown .clock li.hours.h4 {background-position: -340px -510px;}
+.countdown .clock li.hours.h3 {background-position: -510px -510px;}
+.countdown .clock li.hours.h2 {background-position: -680px -510px;}
+.countdown .clock li.hours.h1 {background-position: -850px -510px;}
+
+/* DAYS */
+
+.countdown .clock li.days.d59,.countdown .clock li.days.d60 {background-position: -170px 0;}
+.countdown .clock li.days.d58 {background-position: -340px 0;}
+.countdown .clock li.days.d57 {background-position: -510px 0;}
+.countdown .clock li.days.d56 {background-position: -680px 0;}
+.countdown .clock li.days.d55 {background-position: -850px 0;}
+.countdown .clock li.days.d54 {background-position: -1020px 0;}
+.countdown .clock li.days.d53 {background-position: -1190px 0;}
+.countdown .clock li.days.d52 {background-position: -1360px 0;}
+.countdown .clock li.days.d51 {background-position: -1530px 0;}
+
+.countdown .clock li.days.d50 {background-position: 0px -170px;}
+.countdown .clock li.days.d49 {background-position: -170px -170px;}
+.countdown .clock li.days.d48 {background-position: -340px -170px;}
+.countdown .clock li.days.d47 {background-position: -510px -170px;}
+.countdown .clock li.days.d46 {background-position: -680px -170px;}
+.countdown .clock li.days.d45 {background-position: -850px -170px;}
+.countdown .clock li.days.d44 {background-position: -1020px -170px;}
+.countdown .clock li.days.d43 {background-position: -1190px -170px;}
+.countdown .clock li.days.d42 {background-position: -1360px -170px;}
+.countdown .clock li.days.d41 {background-position: -1530px -170px;}
+
+.countdown .clock li.days.d40 {background-position: 0px -340px;}
+.countdown .clock li.days.d39 {background-position: -170px -340px;}
+.countdown .clock li.days.d38 {background-position: -340px -340px;}
+.countdown .clock li.days.d37 {background-position: -510px -340px;}
+.countdown .clock li.days.d36 {background-position: -680px -340px;}
+.countdown .clock li.days.d35 {background-position: -850px -340px;}
+.countdown .clock li.days.d34 {background-position: -1020px -340px;}
+.countdown .clock li.days.d33 {background-position: -1190px -340px;}
+.countdown .clock li.days.d32 {background-position: -1360px -340px;}
+.countdown .clock li.days.d31 {background-position: -1530px -340px;}
+
+.countdown .clock li.days.d30 {background-position: 0px -510px;}
+.countdown .clock li.days.d29 {background-position: -170px -510px;}
+.countdown .clock li.days.d28 {background-position: -340px -510px;}
+.countdown .clock li.days.d27 {background-position: -510px -510px;}
+.countdown .clock li.days.d26 {background-position: -680px -510px;}
+.countdown .clock li.days.d25 {background-position: -850px -510px;}
+.countdown .clock li.days.d24 {background-position: -1020px -510px;}
+.countdown .clock li.days.d23 {background-position: -1190px -510px;}
+.countdown .clock li.days.d22 {background-position: -1360px -510px;}
+.countdown .clock li.days.d21 {background-position: -1530px -510px;}
+
+.countdown .clock li.days.d20 {background-position: 0px -680px;}
+.countdown .clock li.days.d19 {background-position: -170px -680px;}
+.countdown .clock li.days.d18 {background-position: -340px -680px;}
+.countdown .clock li.days.d17 {background-position: -510px -680px;}
+.countdown .clock li.days.d16 {background-position: -680px -680px;}
+.countdown .clock li.days.d15 {background-position: -850px -680px;}
+.countdown .clock li.days.d14 {background-position: -1020px -680px;}
+.countdown .clock li.days.d13 {background-position: -1190px -680px;}
+.countdown .clock li.days.d12 {background-position: -1360px -680px;}
+.countdown .clock li.days.d11 {background-position: -1530px -680px;}
+
+.countdown .clock li.days.d10 {background-position: 0px -850px;}
+.countdown .clock li.days.d9 {background-position: -170px -850px;}
+.countdown .clock li.days.d8 {background-position: -340px -850px;}
+.countdown .clock li.days.d7 {background-position: -510px -850px;}
+.countdown .clock li.days.d6 {background-position: -680px -850px;}
+.countdown .clock li.days.d5 {background-position: -850px -850px;}
+.countdown .clock li.days.d4 {background-position: -1020px -850px;}
+.countdown .clock li.days.d3 {background-position: -1190px -850px;}
+.countdown .clock li.days.d2 {background-position: -1360px -850px;}
+.countdown .clock li.days.d1 {background-position: -1530px -850px;}
+
+.countdown .clock li.days.d0 {background-position: 0px 0px;}

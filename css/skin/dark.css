@@ -1,0 +1,156 @@
+@charset "UTF-8";
+/* CSS Document */
+body,
+.acc-wrapper.flat .accordion-title .plus-icon,
+#toggle-view li span,
+.pagination ul.page-numbers li a,
+.pagination ul.page-numbers li span,
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input  {
+	background-color:#1E2A2A;
+	color:#8B8B8B;
+	}
+.boom-list li,
+.the-icons li,
+.testimonial-slider-1 .slides article p,
+.textwidget,
+.contact-address {
+	color:#8B8B8B;
+	}
+/* Line color */	
+.flx-divider,
+#main-menu > li,
+.view,
+#flx-slides-2 .entry-item,
+.wrapper.flx-line,
+#main-content .portfolio-widget .widget-title, 
+#main-content .recent-widget .widget-title,
+#main-menu,
+#main-col,
+#page-bottom .flx-line,
+.dark-footer #page-bottom #bottom-sidebar > li,
+.team-area ul li,
+#main-content .flx-latest-blog .widget-title,
+.flx-home-page-3 .list-carousel.responsive,
+.flx-home-page-3 #main-content .portfolio-widget .widget-title,
+#sidebar,
+#sidebar .widget ul li,
+.widget_search #searchform #s,
+.flx-sidebar-s2 #sidebar,
+.about-area .flx-two-third ,
+.about-area .flx-one-third,
+#bottom-sidebar > li,
+#bottom-sidebar .contact-info,
+.service-widget ul li,
+.countdown-title li,
+.newsletter-form .email,
+.accordion-title,
+.elements-box .pf-box,
+.pf-box.mask-hover-2 > li,
+.post-item,
+.pagination ul.page-numbers li a,
+.pagination ul.page-numbers li span,
+.comments-list .comment,
+#comment_message,
+#comment_name, 
+#comment_url, 
+#comment_email,
+#contact_name, 
+#contact_email, 
+#contact_url,
+#contact_message,
+#bottom-sidebar > li,
+.countdown .clock li {
+	border-color:#3B4747;
+}
+	
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.flx-divider, #main-menu > li,
+.view,
+.wrapper.flx-line, 
+#main-content .portfolio-widget .widget-title, 
+#main-content .recent-widget .widget-title,
+#main-menu > li > a,
+.service-widget ul li i ,
+.accordion-title h5 a,
+.error-404-right h2,
+.error-404-right p,
+#toggle-view li h5,
+.entry-box footer a,
+.comment-wrap .comment-body .comment-meta .author {
+	color:#FFF;
+}
+.testimonial-slider-1 .slides a {
+	color:#FFF !important;
+}
+.testimonial-slider .testimonial-author a ,
+p,
+.c-note {
+	color:#8B8B8B
+}
+.carousel-nav a,
+.pf-detail-prev,
+.pf-detail-next,
+.pf-detail-hide,
+.flx-home-page-3 .portfolio-widget .view-more,
+#submit-comment {
+	background-color:#FF6850;
+}
+.testimonial-slider-1 .slides article img  {
+	border-color:#1E2A2A;
+}
+.bottom-tag-line .white-arrow {
+	border-top-color:#1E2A2A;
+}
+
+.widget_search #searchform #s,
+.newsletter-form .email,
+#sidebar .widget_tag_cloud .tagcloud a,
+.list-container-1 ul li a ,
+.progress-bar,
+.acc-wrapper.flat .accordion-title,
+.pf-detail-item .pf-content header,
+.the-icons li:hover,
+#toggle-view li h5,
+.about-author,
+.comment-wrap .comment-body .comment-reply-link,
+.comment-wrap .comment-body .comment-edit-link,
+.entry-box .widget_tag_cloud .tagcloud a,
+.testimonial-slider-1 .slides article,
+.team-area .social-bookmarks li.dribbble a,
+.about-des .social-bookmarks li.dribbble a,
+.team-area .social-bookmarks li.googleplus a,
+.about-des .social-bookmarks li.googleplus a,
+.team-area .social-bookmarks li.twitter a,
+.about-des .social-bookmarks li.twitter a,
+.team-area .social-bookmarks li.facebook a,
+.about-des .social-bookmarks li.facebook a  {
+    background-color:#3B4747;
+}
+#sidebar .widget .widget-title {
+	color:#fff;
+	}
+#sidebar a {
+	color:#9ec4c4;
+}	
+.post-item .quote-wrapper {
+	background-image:url(../../images/background/left-quote-corner-d.png);
+}
+.post-item .quote-wrapper .quote-inner {
+	background-image:url(../../images/background/right-quote-corner-d.png);
+}
+
+.ei-slider-thumbs li.ei-slider-element{
+	-webkit-box-shadow: 0px 1px 0px 3px #1E2A2A;
+	-moz-box-shadow:  0px 1px 0px 3px #1E2A2A;
+	box-shadow:  0px 1px 0px 3px #1E2A2A;
+}
+.ei-slider-thumbs li a{
+	-webkit-box-shadow: 0px 1px 0px 3px #1E2A2A;
+	-moz-box-shadow: 0px 1px 0px 3px #1E2A2A;
+	box-shadow: 0px 1px 0px 3px #1E2A2A;
+}

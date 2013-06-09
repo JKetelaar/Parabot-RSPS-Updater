@@ -1,0 +1,639 @@
+
+.mejs-container {
+    background: none repeat scroll 0 0 #000000;
+    font-family: Helvetica,Arial;
+    position: relative;
+    text-align: left;
+    text-indent: 0;
+    vertical-align: top;
+	width:100% !important;
+}
+.me-plugin {
+    position: absolute;
+}
+.mejs-embed, .mejs-embed body {
+    background: none repeat scroll 0 0 #000000;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+}
+.mejs-container-fullscreen {
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+}
+.mejs-container-fullscreen .mejs-mediaelement, .mejs-container-fullscreen video {
+    height: 100%;
+    width: 100%;
+}
+.mejs-background {
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.mejs-mediaelement {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.mejs-poster {
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.mejs-poster img {
+    border: 0 none;
+    display: block;
+    padding: 0;
+}
+.mejs-overlay {
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.mejs-overlay-play {
+    cursor: pointer;
+}
+.mejs-overlay-button {
+    background: url("bigplay.svg") no-repeat scroll 0 0 transparent;
+    height: 100px;
+    left: 50%;
+    margin: -50px 0 0 -50px;
+    position: absolute;
+    top: 50%;
+    width: 100px;
+}
+.no-svg .mejs-overlay-button {
+    background-image: url("bigplay.html");
+}
+.mejs-overlay:hover .mejs-overlay-button {
+    background-position: 0 -100px;
+}
+.mejs-overlay-loading {
+    background: linear-gradient(rgba(50, 50, 50, 0.9), rgba(0, 0, 0, 0.9)) repeat scroll 0 0 transparent;
+    height: 80px;
+    left: 50%;
+    margin: -40px 0 0 -40px;
+    position: absolute;
+    top: 50%;
+    width: 80px;
+}
+.mejs-overlay-loading span {
+    background: url("loading.html") no-repeat scroll 50% 50% transparent;
+    display: block;
+    height: 80px;
+    width: 80px;
+}
+.mejs-container .mejs-controls {
+    background: #111111;
+    bottom: 0;
+    height: 30px;
+    left: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+}
+.mejs-container .mejs-controls div {
+    background: none repeat scroll 0 center transparent;
+    border: 0 none;
+    display: block;
+    float: left;
+    font-family: Helvetica,Arial;
+    font-size: 11px;
+    height: 26px;
+    line-height: 11px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 26px;
+}
+.mejs-controls .mejs-button button {
+    background: url("../images/background/controls.svg") no-repeat scroll 0 0 transparent;
+    border: 0 none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    height: 16px;
+    line-height: 0;
+    margin: 7px 5px;
+    padding: 0;
+    position: absolute;
+    text-decoration: none;
+    width: 16px;
+}
+.no-svg .mejs-controls .mejs-button button {
+    background-image:url(../images/background/controls.png);
+}
+.mejs-controls .mejs-button button:focus {
+    outline: 1px solid yellow;
+}
+.mejs-container .mejs-controls .mejs-time {
+    -moz-box-sizing: content-box;
+    color: #FFFFFF;
+    display: block;
+    height: 17px;
+    overflow: hidden;
+    padding: 8px 3px 0;
+    text-align: center;
+    width: auto;
+}
+.mejs-container .mejs-controls .mejs-time span {
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font-size: 11px;
+    line-height: 12px;
+    margin: 1px 2px 0 0;
+    width: auto;
+}
+.mejs-controls .mejs-play button {
+    background-position: 0 0;
+}
+.mejs-controls .mejs-pause button {
+    background-position: 0 -16px;
+}
+.mejs-controls .mejs-stop button {
+    background-position: -112px 0;
+}
+.mejs-controls div.mejs-time-rail {
+    padding-top: 5px;
+    width: 200px;
+}
+.mejs-controls .mejs-time-rail span {
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+	z-index:0;
+    width: 180px;
+}
+.mejs-controls .mejs-time-rail .mejs-time-total {
+    background: #666;
+    margin: 5px;
+}
+.mejs-controls .mejs-time-rail .mejs-time-buffering {
+    animation: 2s linear 0s normal none infinite buffering-stripes;
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-size: 15px 15px;
+    width: 100%;
+}
+.mejs-controls .mejs-time-rail .mejs-time-loaded {
+    background:#666;
+    width: 0;
+}
+.mejs-controls .mejs-time-rail .mejs-time-current {
+    background:#06C5AC;
+    width: 0;
+}
+.mejs-controls .mejs-time-rail .mejs-time-handle {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 2px solid #333333;
+    border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    display: none;
+    margin: 0;
+    position: absolute;
+	z-index:0;
+    text-align: center;
+    top: -2px;
+    width: 10px;
+}
+.mejs-controls .mejs-time-rail .mejs-time-float {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #333333;
+    color: #111111;
+    display: none;
+    height: 17px;
+    margin-left: -18px;
+    position: absolute;
+    text-align: center;
+    top: -26px;
+    width: 36px;
+}
+.mejs-controls .mejs-time-rail .mejs-time-float-current {
+    display: block;
+    left: 0;
+    margin: 2px;
+    text-align: center;
+    width: 30px;
+}
+.mejs-controls .mejs-time-rail .mejs-time-float-corner {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #EEEEEE transparent transparent;
+    border-image: none;
+    border-radius: 0 0 0 0;
+	-moz-border-radius: 0 0 0 0;
+	-webkit-border-radius: 0 0 0 0;
+    border-style: solid;
+    border-width: 5px;
+    display: block;
+    height: 0;
+    left: 13px;
+    line-height: 0;
+    position: absolute;
+	z-index:0;
+    top: 15px;
+    width: 0;
+}
+.mejs-long-video .mejs-controls .mejs-time-rail .mejs-time-float {
+    width: 48px;
+}
+.mejs-long-video .mejs-controls .mejs-time-rail .mejs-time-float-current {
+    width: 44px;
+}
+.mejs-long-video .mejs-controls .mejs-time-rail .mejs-time-float-corner {
+    left: 18px;
+}
+.mejs-controls .mejs-fullscreen-button button {
+    background-position: -32px 0;
+}
+.mejs-controls .mejs-unfullscreen button {
+    background-position: -32px -16px;
+}
+.mejs-controls .mejs-mute button {
+    background-position: -16px -16px;
+}
+.mejs-controls .mejs-unmute button {
+    background-position: -16px 0;
+}
+.mejs-controls .mejs-volume-button {
+    position: relative;
+}
+.mejs-controls .mejs-volume-button .mejs-volume-slider {
+    background: none repeat scroll 0 0 rgba(50, 50, 50, 0.7);
+    border-radius: 0 0 0 0;
+	-moz-border-radius: 0 0 0 0;
+	-webkit-border-radius: 0 0 0 0;
+    display: none;
+    height: 115px;
+    left: 0;
+    margin: 0;
+    position: absolute;
+	z-index:0;
+    top: -115px;
+    width: 25px;
+    z-index: 1;
+}
+.mejs-controls .mejs-volume-button:hover {
+    border-radius: 0 0 4px 4px;
+	-moz-border-radius: 0 0 4px 4px;
+	-webkit-border-radius: 0 0 4px 4px;
+}
+.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-total {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.5);
+    height: 100px;
+    left: 11px;
+    margin: 0;
+    position: absolute;
+    top: 8px;
+    width: 2px;
+}
+.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-current {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.9);
+    height: 100px;
+    left: 11px;
+    margin: 0;
+    position: absolute;
+    top: 8px;
+    width: 2px;
+}
+.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-handle {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.9);
+    border-radius: 1px 1px 1px 1px;
+	-moz-border-radius: 1px 1px 1px 1px;
+	-webkit-border-radius: 1px 1px 1px 1px;
+    cursor: n-resize;
+    height: 6px;
+    left: 4px;
+    margin: 0;
+    position: absolute;
+	z-index:0;
+    top: -3px;
+    width: 16px;
+}
+.mejs-controls div.mejs-horizontal-volume-slider {
+    height: 26px;
+    position: relative;
+    width: 60px;
+}
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total {
+    background: #666;
+    font-size: 1px;
+    height: 8px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+	z-index:0;
+    top: 11px;
+    width: 50px;
+}
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
+    background: #FFF;
+    font-size: 1px;
+    height: 8px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+	z-index:0;
+    top: 11px;
+    width: 50px;
+}
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-handle {
+    display: none;
+}
+.mejs-controls .mejs-captions-button {
+    position: relative;
+}
+.mejs-controls .mejs-captions-button button {
+    background-position: -48px 0;
+}
+.mejs-controls .mejs-captions-button .mejs-captions-selector {
+    background: none repeat scroll 0 0 rgba(50, 50, 50, 0.7);
+    border: 1px solid transparent;
+    border-radius: 0 0 0 0;
+	-moz-border-radius: 0 0 0 0;
+	-webkit-border-radius: 0 0 0 0;
+    bottom: 26px;
+    height: 100px;
+    overflow: hidden;
+    padding: 10px;
+    position: absolute;
+	z-index:0;
+    right: -10px;
+    visibility: hidden;
+    width: 130px;
+}
+.mejs-controls .mejs-captions-button .mejs-captions-selector ul {
+    display: block;
+    list-style-type: none !important;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+.mejs-controls .mejs-captions-button .mejs-captions-selector ul li {
+    color: #FFFFFF;
+    display: block;
+    list-style-type: none !important;
+    margin: 0 0 6px;
+    overflow: hidden;
+    padding: 0;
+}
+.mejs-controls .mejs-captions-button .mejs-captions-selector ul li input {
+    clear: both;
+    float: left;
+    margin: 3px 3px 0 5px;
+}
+.mejs-controls .mejs-captions-button .mejs-captions-selector ul li label {
+    float: left;
+    font-family: helvetica,arial;
+    font-size: 10px;
+    line-height: 15px;
+    padding: 4px 0 0;
+    width: 100px;
+}
+.mejs-controls .mejs-captions-button .mejs-captions-translations {
+    font-size: 10px;
+    margin: 0 0 5px;
+}
+.mejs-chapters {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 10000px;
+    z-index: 1;
+}
+.mejs-chapters .mejs-chapter {
+    background: linear-gradient(rgba(50, 50, 50, 0.7), rgba(0, 0, 0, 0.7)) repeat scroll 0 0 transparent;
+    border: 0 none;
+    float: left;
+    overflow: hidden;
+    position: absolute;
+}
+.mejs-chapters .mejs-chapter .mejs-chapter-block {
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    font-size: 11px;
+    padding: 5px;
+}
+.mejs-chapters .mejs-chapter .mejs-chapter-block-last {
+    border-right: medium none;
+}
+.mejs-chapters .mejs-chapter .mejs-chapter-block:hover {
+    background: linear-gradient(rgba(102, 102, 102, 0.7), rgba(50, 50, 50, 0.6)) repeat scroll 0 0 transparent;
+}
+.mejs-chapters .mejs-chapter .mejs-chapter-block .ch-title {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 12px;
+    margin: 0 0 3px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.mejs-chapters .mejs-chapter .mejs-chapter-block .ch-timespan {
+    display: block;
+    font-size: 12px;
+    line-height: 12px;
+    margin: 3px 0 4px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.mejs-captions-layer {
+    bottom: 0;
+    color: #FFFFFF;
+    font-size: 12px;
+    left: 0;
+    line-height: 22px;
+    position: absolute;
+    text-align: center;
+}
+.mejs-captions-layer a {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+.mejs-captions-layer[lang="ar"] {
+    font-size: 20px;
+    font-weight: normal;
+}
+.mejs-captions-position {
+    bottom: 15px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.mejs-captions-position-hover {
+    bottom: 45px;
+}
+.mejs-captions-text {
+    background: none repeat scroll 0 0 rgba(20, 20, 20, 0.8);
+    padding: 3px 5px;
+}
+.mejs-clear {
+    clear: both;
+}
+.me-cannotplay a {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.me-cannotplay span {
+    display: block;
+    padding: 15px;
+}
+.mejs-controls .mejs-loop-off button {
+    background-position: -64px -16px;
+}
+.mejs-controls .mejs-loop-on button {
+    background-position: -64px 0;
+}
+.mejs-controls .mejs-backlight-off button {
+    background-position: -80px -16px;
+}
+.mejs-controls .mejs-backlight-on button {
+    background-position: -80px 0;
+}
+.mejs-controls .mejs-picturecontrols-button {
+    background-position: -96px 0;
+}
+.mejs-contextmenu {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #999999;
+    border-radius: 4px 4px 4px 4px;
+	-moz-border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
+    left: 0;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    width: 150px;
+    z-index: 1001;
+}
+.mejs-contextmenu .mejs-contextmenu-separator {
+    background: none repeat scroll 0 0 #333333;
+    font-size: 0;
+    height: 1px;
+    margin: 5px 6px;
+}
+.mejs-contextmenu .mejs-contextmenu-item {
+    color: #333333;
+    cursor: pointer;
+    font-family: Helvetica,Arial;
+    font-size: 12px;
+    padding: 4px 6px;
+}
+.mejs-contextmenu .mejs-contextmenu-item:hover {
+    background: none repeat scroll 0 0 #2C7C91;
+    color: #FFFFFF;
+}
+.mejs-controls .mejs-sourcechooser-button {
+    position: relative;
+}
+.mejs-controls .mejs-sourcechooser-button button {
+    background-position: -128px 0;
+}
+.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector {
+    background: none repeat scroll 0 0 rgba(50, 50, 50, 0.7);
+    border: 1px solid transparent;
+    border-radius: 0 0 0 0;
+	-webkit-border-radius: 0 0 0 0;
+	-moz-border-radius: 0 0 0 0;
+    bottom: 26px;
+    height: 100px;
+    overflow: hidden;
+    padding: 10px;
+    position: absolute;
+	z-index:0;
+    right: -10px;
+    visibility: hidden;
+    width: 130px;
+}
+.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul {
+    display: block;
+    list-style-type: none !important;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul li {
+    color: #FFFFFF;
+    display: block;
+    list-style-type: none !important;
+    margin: 0 0 6px;
+    overflow: hidden;
+    padding: 0;
+}
+.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul li input {
+    clear: both;
+    float: left;
+    margin: 3px 3px 0 5px;
+}
+.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul li label {
+    float: left;
+    font-family: helvetica,arial;
+    font-size: 10px;
+    line-height: 15px;
+    padding: 4px 0 0;
+    width: 100px;
+}
+.mejs-postroll-layer {
+    background: none repeat scroll 0 0 rgba(50, 50, 50, 0.7);
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+.mejs-postroll-layer-content {
+    height: 100%;
+    width: 100%;
+}
+.mejs-postroll-close {
+    background: none repeat scroll 0 0 rgba(50, 50, 50, 0.7);
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 4px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
+}
+
+.post-item .mejs-video,
+.pf-detail-img .mejs-video {
+	width:100% !important;
+	height:380px !important;
+}
+.blog-style-1 .post-item .mejs-video,
+.blog-style-1 .mejs-poster img {
+	height:490px !important;
+}
+.blog-style-2 .post-item .mejs-video {
+	height:250px !important;
+}
+.blog-style-2 .mejs-audio {
+	margin-top:40px;
+}
+.pf-detail-img .mejs-audio {
+	margin-top:40px;
+}

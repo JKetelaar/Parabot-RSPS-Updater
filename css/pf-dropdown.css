@@ -1,0 +1,30 @@
+@import url('common.css');
+
+.cd-dropdown ul {
+	position: absolute;
+	top: 0px;
+	width: 170px;
+}
+
+.cd-dropdown ul li {
+	position: absolute;
+	width: 100%;
+	pointer-events: none;
+}
+
+.cd-active.cd-dropdown ul li {
+	pointer-events: auto;
+}
+
+.cd-active.cd-dropdown ul li span {
+	-webkit-transition: all 0.2s linear 0s;
+	-moz-transition: all 0.2s linear 0s;
+	-ms-transition: all 0.2s linear 0s;
+	-o-transition: all 0.2s linear 0s;
+	transition: all 0.2s linear 0s;
+}
+
+.cd-active.cd-dropdown ul li span:hover {
+	background: #06c5ac;
+	color: #fff;
+}
