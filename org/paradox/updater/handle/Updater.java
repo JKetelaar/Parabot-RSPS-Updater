@@ -29,7 +29,7 @@ public class Updater {
 
     public Updater() {
         transforms = new Transform[] {
-                new Client(), new Player(), new EntityDef(), new Entity()
+                new Client(), new Player(), new EntityDef(), new Entity(), new Animable(), new NodeSub(), new RSApplet()
         };
     }
 
