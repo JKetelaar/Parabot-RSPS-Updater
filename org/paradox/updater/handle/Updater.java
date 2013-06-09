@@ -2,17 +2,17 @@ package org.paradox.updater.handle;
 
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.tree.ClassNode;
+import org.paradox.updater.model.FieldContainer;
 import org.paradox.updater.model.Transform;
-import org.paradox.updater.transforms.Client;
+import org.paradox.updater.transforms.*;
 
 import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
+
 import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
-import java.util.zip.ZipEntry;
+
 
 /**
  * Created with IntelliJ IDEA.
@@ -24,11 +24,12 @@ import java.util.zip.ZipEntry;
 public class Updater {
 
     public static HashMap<String, ClassNode> classes = new HashMap<>();
+
     private final Transform[] transforms;
 
     public Updater() {
         transforms = new Transform[] {
-                new Client()
+                new Client(), new Player(), new EntityDef(), new Entity()
         };
     }
 
@@ -52,9 +53,19 @@ public class Updater {
 
         for(Transform trans : transforms) {
             for(ClassNode classNode : classes.values()) {
-                org.paradox.updater.model.ClassNode node = new org.paradox.updater.model.ClassNode(classNode);
-                if(trans.validate(node)) {
-                    trans.execute(node);
+
+                if(trans.validate(classNode)) {
+                    Transform.IDENTIFIED.put(trans.getClass().getSimpleName(), classNode);
+                    trans.execute(classNode);
+                }
+            }
+        }
+
+        for(String key : Transform.IDENTIFIED.keySet()) {
+            System.out.println("- Identified " + key + " as " + Transform.IDENTIFIED.get(key).name);
+            for(FieldContainer container : Transform.FIELDS) {
+                if(container.getOwner().equals(Transform.IDENTIFIED.get(key))) {
+                    System.out.println("    * " + key + "." + container.getName() + "() identified as " + container.getOwner().name + "." + container.getField().name);
                 }
             }
         }
